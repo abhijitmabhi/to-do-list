@@ -1,19 +1,22 @@
 {
-  "posts": [
+  "tasks": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "Applicant Profile Update",
+      "dueDate": "May 5th at 5:00pm",
+      "urgent": true
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "title": "Employee Dashboard",
+      "dueDate": "Jun 7th at 2:30pm",
+      "urgent": false
+    },
+    {
+      "id": 3,
+      "title": "Budget Report",
+      "dueDate": "Jul 22th at 10:00am",
+      "urgent": false
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
