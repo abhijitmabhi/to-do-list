@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header'
 import Tasks from './components/Tasks'
+import AddTask from './components/AddTask'
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="container">
       <Header/>
+      <AddTask/>
       <Tasks tasks={tasks} />
     </div>
   );
