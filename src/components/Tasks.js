@@ -1,7 +1,7 @@
 import React from 'react'
 import Task from './Task'
 
-const Tasks = ({ tasks, onDelete, onGoing }) => {
+const Tasks = ({ tasks, onDelete, onGoing, review, complete, onMove }) => {
     return (
         <div className='flex flex-row mt-5'>
             <div>
@@ -11,6 +11,8 @@ const Tasks = ({ tasks, onDelete, onGoing }) => {
                         key={index}
                         task={task}
                         onDelete={onDelete}
+                        onMove={onMove}
+                        type='task'
                     />
                 ))}
             </div>
@@ -21,26 +23,31 @@ const Tasks = ({ tasks, onDelete, onGoing }) => {
                         key={index}
                         task={task}
                         onDelete={onDelete}
+                        onMove={onMove}
+                        type='onGoing'
                     />
                 ))}
             </div>
             <div>
                 <h1>Review</h1>
-                {tasks.map((task, index) => (
+                {review.map((task, index) => (
                     <Task
                         key={index}
                         task={task}
                         onDelete={onDelete}
+                        onMove={onMove}
+                        type='review'
                     />
                 ))}
             </div>
             <div>
                 <h1>Done</h1>
-                {tasks.map((task, index) => (
+                {complete.map((task, index) => (
                     <Task
                         key={index}
                         task={task}
                         onDelete={onDelete}
+                        type=''
                     />
                 ))}
             </div>
