@@ -25,11 +25,11 @@ const AddTask = ({ onAdd }) => {
         <form className='add-form' onSubmit={onSubmit}>
             <div className='form-control'>
                 <label>Task</label>
-                <input type='text' placeholder='Title' value={title} onChange={(e) => setTitle(e.target.value)} />
+                <input className='border-4 border-light-blue-500 border-opacity-100' type='text' placeholder='Title' value={title} onChange={(e) => setTitle(e.target.value)} />
             </div>
             <div className='form-control'>
                 <label>Dead Line</label>
-                <input type='date' placeholder='Date & Time' value={dueDate} onChange={(e) => setDueDate(e.target.value)} />
+                <input className='border-4 border-light-blue-500 border-opacity-100' type='date' placeholder='Date & Time' value={dueDate} onChange={(e) => setDueDate(e.target.value)} />
             </div>
             <div className='form-control form-control-check'>
                 <label>Urgent</label>

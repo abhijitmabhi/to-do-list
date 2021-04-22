@@ -13,7 +13,7 @@ const Header = ({ title, showAdd, onAdd  }) => {
 }
 
 Header.defaultProps = {
-    title: "To Do List"
+    title: "TASK PLANNER"
 }
 
 export default Header

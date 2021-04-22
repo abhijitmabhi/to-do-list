@@ -7,10 +7,10 @@
       "urgent": true
     },
     {
-      "id": 2,
-      "title": "Employee Dashboard",
-      "dueDate": "Jun 7th at 2:30pm",
-      "urgent": false
+      "title": "Employee Payroll Report",
+      "dueDate": "2021-04-30",
+      "urgent": false,
+      "id": 2
     }
   ],
   "ongoing": [
@@ -33,12 +33,6 @@
       "title": "Dashboard Calendar",
       "dueDate": "2021-04-29",
       "urgent": false
-    },
-    {
-      "id": 2
-    },
-    {
-      "id": 3
     }
   ],
   "complete": [
@@ -47,15 +41,6 @@
       "title": "Image Upload",
       "dueDate": "2021-04-29",
       "urgent": true
-    },
-    {
-      "title": "GGG",
-      "dueDate": "2021-04-08",
-      "urgent": true,
-      "id": 2
-    },
-    {
-      "id": 3
     }
   ]
 }

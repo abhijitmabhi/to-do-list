@@ -66,12 +66,12 @@ function App() {
     return data;
   }
 
-    // Fetch review by Id
-    const fetchReviewById = async (id) => {
-      const res = await fetch(`${baseURL}/review/${id}`);
-      const data = await res.json();
-      return data;
-    }
+  // Fetch review by Id
+  const fetchReviewById = async (id) => {
+    const res = await fetch(`${baseURL}/review/${id}`);
+    const data = await res.json();
+    return data;
+  }
 
 
   // Fetch OnGoing Tasks
@@ -118,6 +118,9 @@ function App() {
   }
 
   // Move Task
+  /*
+    TODO:: Need to Refactor
+  */
   const moveTask = async (id, type) => {
     if (type === 'task') {
       const objToMove = await fetchTask(id);
@@ -138,6 +141,7 @@ function App() {
       const data = await res.json();
       setOnGoing([...onGoing, data]);
     }
+
     if (type === 'onGoing') {
       const objToMove = await fetchOnGoingById(id);
       // delete first

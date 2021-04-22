@@ -5,7 +5,7 @@ const Tasks = ({ tasks, onDelete, onGoing, review, complete, onMove }) => {
     return (
         <div className='flex flex-row mt-5'>
             <div>
-                <h1>To Do</h1>
+                <h1 className='text-center text-xl font-extrabold border-4 border-light-blue-500 border-opacity-100'>To Do</h1>
                 {tasks.map((task, index) => (
                     <Task
                         key={index}
@@ -17,7 +17,7 @@ const Tasks = ({ tasks, onDelete, onGoing, review, complete, onMove }) => {
                 ))}
             </div>
             <div>
-                <h1>On Going</h1>
+                <h1 className='text-center text-xl font-extrabold border-4 border-light-blue-500 border-opacity-100'>On Going</h1>
                 {onGoing.map((task, index) => (
                     <Task
                         key={index}
@@ -29,7 +29,7 @@ const Tasks = ({ tasks, onDelete, onGoing, review, complete, onMove }) => {
                 ))}
             </div>
             <div>
-                <h1>Review</h1>
+                <h1 className='text-center text-xl font-extrabold border-4 border-light-blue-500 border-opacity-100'>Review</h1>
                 {review.map((task, index) => (
                     <Task
                         key={index}
@@ -41,7 +41,7 @@ const Tasks = ({ tasks, onDelete, onGoing, review, complete, onMove }) => {
                 ))}
             </div>
             <div>
-                <h1>Done</h1>
+                <h1 className='text-center text-xl font-extrabold border-4 border-light-blue-500 border-opacity-100'>Done</h1>
                 {complete.map((task, index) => (
                     <Task
                         key={index}
